@@ -24,11 +24,7 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'Djetson\Shop\Components\Product'       => 'shopProduct',
-            'Djetson\Shop\Components\ProductsList'  => 'shopProductsList',
-            'Djetson\Shop\Components\Categories'    => 'shopCategories',
-            'Djetson\Shop\Components\Binding'       => 'shopBinding',
-            'Djetson\Shop\Components\Bindings'      => 'shopBindings',
+            'Djetson\Shop\Components\ProductsList'  => 'productsList',
         ];
     }
 

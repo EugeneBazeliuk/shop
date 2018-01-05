@@ -1,0 +1,19 @@
+{% set products = __SELF__.products %}
+
+{% if products %}
+
+{% for row in products|batch(6, null) %}
+<div class="row auto-clear">
+    {% for product in row %}
+    <div class="col-xs-6 col-sm-4 col-lg-2">
+        {% partial __SELF__ ~ '::item' product=product %}
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
+
+{% partial __SELF__ ~ '::pagination' products=products %}
+
+{% else %}
+    <p>No products</p>
+{% endif %}
