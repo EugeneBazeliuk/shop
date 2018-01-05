@@ -1,0 +1,56 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+
+    id:
+        label: ID
+        searchable: true
+        width: 1%
+
+    status:
+        label: djetson.shop::lang.list.status
+        type: partial
+        path: ~/plugins/djetson/shop/models/order/_column_status.htm
+
+    customer:
+        label: djetson.shop::lang.list.customer
+        type: partial
+        path: ~/plugins/djetson/shop/models/order/_column_customer.htm
+        width: 180px
+
+    manager_info:
+        label: djetson.shop::lang.list.manager
+        type: text
+        width: 180px
+
+    sub_total:
+        label: djetson.shop::lang.list.subtotal
+        type: price
+        width: 120px
+
+    total:
+        label: djetson.shop::lang.list.total
+        type: price
+        width: 120px
+
+    is_paid:
+        label: djetson.shop::lang.form.is_paid
+        type: switch_colored
+        width: 1%
+
+    is_shipped:
+        label: djetson.shop::lang.form.is_shipped
+        type: switch_colored
+        width: 1%
+
+    is_closed:
+        label: djetson.shop::lang.form.is_closed
+        type: switch_colored
+        width: 1%
+
+    created_at:
+        label: djetson.shop::lang.list.created_at
+        type: timetense
+        width: 140px

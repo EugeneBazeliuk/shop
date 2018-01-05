@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: djetson.shop::lang.payment_methods.label
+
+# Model Form Field configuration
+form: $/djetson/shop/models/paymentmethod/fields.yaml
+
+# Model Class name
+modelClass: Djetson\Shop\Models\PaymentMethod
+
+# Default redirect location
+defaultRedirect: djetson/shop/paymentmethods
+
+# Create page
+create:
+    title: djetson.shop::lang.payment_methods.create
+    redirect: djetson/shop/paymentmethods/update/:id
+    redirectClose: djetson/shop/paymentmethods
+
+# Update page
+update:
+    title: djetson.shop::lang.payment_methods.update
+    redirect: djetson/shop/paymentmethods
+    redirectClose: djetson/shop/paymentmethods
+
+# Preview page
+preview:
+    title: djetson.shop::lang.payment_methods.preview

@@ -1,0 +1,12 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    # Payment method
+    payment_method:
+        label: djetson.shop::lang.form.payment_method
+        span: full
+        type: relation
+        emptyOption: djetson.shop::lang.form.dropdown_empty

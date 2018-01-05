@@ -1,0 +1,54 @@
+products:
+    label: djetson.shop::lang.products.label
+    view:
+        showSearch: true
+        recordsPerPage: 10
+        toolbarButtons: add|remove
+        list:
+            columns:
+                name:
+                    label: djetson.shop::lang.list.name
+                    type: text
+                    searchable: 1
+                sku:
+                    label: djetson.shop::lang.list.sku
+                    type: number
+                    searchable: 1
+                    width: 20%
+                pivot[quantity]:
+                    label: djetson.shop::lang.list.quantity
+                    type: number
+                    required: 1
+    manage:
+        showSearch: true
+        recordsPerPage: 10
+        list:
+            columns:
+                name:
+                    label: djetson.shop::lang.list.name
+                    type: text
+                    searchable: 1
+                sku:
+                    label: djetson.shop::lang.list.sku
+                    type: number
+                    searchable: 1
+                    width: 20%
+                is_active:
+                    label: djetson.shop::lang.list.is_active
+                    type: switch
+                    width: 1%
+    pivot:
+        form:
+            fields:
+                pivot[quantity]:
+                    label: djetson.shop::lang.form.quantity
+                    type: number
+                    required: 1
+
+logs:
+    readOnly: true
+    label: djetson.shop::lang.warehouse_logs.label
+    view:
+        showSearch: true
+        recordsPerPage: 10
+        list: $/djetson/shop/models/warehouselog/columns.yaml

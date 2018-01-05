@@ -1,0 +1,18 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+
+    name:
+        label: djetson.shop::lang.list.name
+        type: text
+        searchable: 1
+
+    properties:
+        label: djetson.shop::lang.list.count
+        type: number
+        relation: properties_count
+        valueFrom: count
+        default: 0
+        sortable: 0

@@ -1,0 +1,38 @@
+<?= Form::open(['id' => 'OrderAddManager']) ?>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="popup">×</button>
+        <h4 class="modal-title">Add manager to Order</h4>
+    </div>
+
+    <div class="modal-body">
+
+        <div class="form-group dropdown-field span-full">
+            <label>Select a manager</label>
+            <select class="form-control custom-select" name="manager">
+                <?php foreach ($users as $user): ?>
+                <option value="<?= $user->id ?>"><?= e($user->login) ?></option>
+                <?php endforeach ?>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="modal-footer">
+        <button
+            type="submit"
+            class="btn btn-primary"
+            data-request="onAddManager"
+            data-request-success="$('<?= '#'.$this->getId('hint-manager') ?>').remove()"
+            data-popup-load-indicator>
+            Add manager
+        </button>
+        <button
+                type="button"
+                class="btn btn-default"
+                data-dismiss="popup">
+            Cancel
+        </button>
+    </div>
+
+<?= Form::close() ?>

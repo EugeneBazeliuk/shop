@@ -1,0 +1,183 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    name:
+        label: djetson.shop::lang.form.name
+        type: text
+        span: auto
+        required: 1
+
+    slug:
+        label: djetson.shop::lang.form.slug
+        type: text
+        span: auto
+        preset:
+            field: name
+            type: slug
+
+tabs:
+    fields:
+
+        # Details
+        manufacturer:
+            tab: djetson.shop::lang.form.tab.general
+            label: djetson.shop::lang.form.manufacturer
+            type: relation
+            span: auto
+            emptyOption: djetson.shop::lang.form.dropdown_empty
+
+        price:
+            tab: djetson.shop::lang.form.tab.general
+            label: djetson.shop::lang.form.price
+            type: number
+            span: auto
+
+        sku:
+            tab: djetson.shop::lang.form.tab.general
+            label: djetson.shop::lang.form.sku
+            type: number
+            span: auto
+            required: 1
+
+        isbn:
+            tab: djetson.shop::lang.form.tab.general
+            label: djetson.shop::lang.form.isbn
+            type: number
+            span: auto
+
+        description:
+            tab: djetson.shop::lang.form.tab.general
+            label: djetson.shop::lang.form.description
+            type: richeditor
+            size: large
+
+        # SEO
+        meta_title:
+            tab: djetson.shop::lang.form.tab.seo
+            label: djetson.shop::lang.form.meta_title
+            span: left
+            type: text
+
+        meta_keywords:
+            tab: djetson.shop::lang.form.tab.seo
+            label: djetson.shop::lang.form.meta_keywords
+            type: textarea
+            span: left
+            size: small
+
+        meta_description:
+            tab: djetson.shop::lang.form.tab.seo
+            label: djetson.shop::lang.form.meta_description
+            type: textarea
+            span: left
+            size: large
+
+        # Size
+        package_width:
+            tab: djetson.shop::lang.form.tab.sizes
+            label: djetson.shop::lang.form.package_width
+            type: number
+            span: left
+
+        package_height:
+            tab: djetson.shop::lang.form.tab.sizes
+            label: djetson.shop::lang.form.package_height
+            type: number
+            span: left
+
+        package_depth:
+            tab: djetson.shop::lang.form.tab.sizes
+            label: djetson.shop::lang.form.package_depth
+            type: number
+            span: left
+
+        package_weight:
+            tab: djetson.shop::lang.form.tab.sizes
+            label: djetson.shop::lang.form.package_weight
+            type: number
+            span: left
+
+        # Categories
+        category:
+            tab: djetson.shop::lang.form.tab.categories
+            label: djetson.shop::lang.form.category
+            type: relation
+            span: left
+            emptyOption: djetson.shop::lang.form.dropdown_empty
+
+        categories:
+            tab: djetson.shop::lang.form.tab.categories
+            label: djetson.shop::lang.form.see_in_categories
+            type: relation
+            span: left
+
+        # bindings
+        bindings:
+            tab: djetson.shop::lang.form.tab.bindings
+            type: partial
+            path: $/djetson/shop/controllers/products/relations/_bindings.htm
+            context: [update, preview]
+
+        # Properties
+        properties:
+            tab: djetson.shop::lang.form.tab.properties
+            type: partial
+            path: $/djetson/shop/controllers/products/relations/_properties.htm
+            context: [update, preview]
+
+        # Featured
+        featured:
+            tab: djetson.shop::lang.form.tab.featured
+            type: partial
+            path: $/djetson/shop/controllers/products/relations/_featured.htm
+            context: [update, preview]
+
+        # Images
+        images:
+            tab: djetson.shop::lang.form.tab.images
+            type: fileupload
+            mode: image
+            context: [update, preview]
+
+        # Warehouses
+        warehouses:
+            tab: djetson.shop::lang.form.tab.warehouses
+            type: partial
+            path: $/djetson/shop/controllers/products/relations/_warehouses.htm
+
+secondaryTabs:
+    fields:
+
+        # Image
+        image:
+            type: fileupload
+            mode: image
+            imageHeight: 250
+            imageWidth: 250
+            thumbOptions:
+                mode: crop
+                offset:
+                    - 0
+                    - 0
+                quality: 90
+                sharpen: 0
+                extension: auto
+
+        # States
+        is_active:
+            label: djetson.shop::lang.form.is_active
+            type: switch
+            default: 1
+
+        is_searchable:
+            label: djetson.shop::lang.form.is_searchable
+            type: switch
+            default: 1
+
+        is_unique_text:
+            label: djetson.shop::lang.form.is_unique_text
+            type: switch
+            default: 0

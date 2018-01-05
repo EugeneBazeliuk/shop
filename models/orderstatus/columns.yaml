@@ -1,0 +1,20 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+
+    status_name:
+        label: djetson.shop::lang.list.status
+        relation: status
+        select: name
+        width: 20%
+
+    comment:
+        label: djetson.shop::lang.list.comment
+        type: text
+
+    created_at:
+        label: djetson.shop::lang.list.created_at
+        type: timetense
+        width: 140px

@@ -1,0 +1,35 @@
+items:
+    label: djetson.shop::lang.order_items.label
+    view:
+        list: $/djetson/shop/models/orderitem/columns.yaml
+        showSorting: false
+        defaultSort: created_at
+        toolbarButtons: create|delete
+    manage:
+        list: $/djetson/shop/models/orderitem/columns.yaml
+        form: $/djetson/shop/models/orderitem/fields.yaml
+
+
+
+
+
+
+statuses:
+    label: djetson.shop::lang.order_statuses.label
+    readOnly: true
+    view:
+        list: $/djetson/shop/models/orderstatus/columns.yaml
+        recordsPerPage: 10
+        showSorting: false
+        defaultSort: created_at
+
+logs:
+    label: djetson.shop::lang.order_logs.label
+    readOnly: true
+    view:
+        list: $/djetson/shop/models/orderlog/columns.yaml
+        recordsPerPage: 10
+        showSorting: false
+        defaultSort: created_at
+    manage:
+        form: $/djetson/shop/models/orderlog/fields.yaml

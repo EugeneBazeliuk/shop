@@ -1,0 +1,14 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    id:
+        label: ID
+        disabled: true
+
+    created_at:
+        label: djetson.shop::lang.list.created_at
+        type: timetense
+        width: 140px

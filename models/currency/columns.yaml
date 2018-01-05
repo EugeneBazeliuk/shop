@@ -1,0 +1,41 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+
+    name:
+        label: djetson.shop::lang.list.name
+        type: text
+
+    code:
+        label: djetson.shop::lang.list.code
+        type: text
+        width: 1%
+        cssClass: text-center
+
+    symbol:
+        label: djetson.shop::lang.list.symbol
+        type: text
+        width: 1%
+        cssClass: text-center
+
+    preview:
+        label: djetson.shop::lang.list.preview
+        type: text
+        sortable: 0
+        searchable: 0
+        width: 1%
+        cssClass: text-center
+
+    created_at:
+        label: djetson.shop::lang.list.created_at
+        type: date
+        invisible: true
+        width: 160px
+
+    updated_at:
+        label: djetson.shop::lang.list.updated_at
+        type: date
+        invisible: true
+        width: 160px

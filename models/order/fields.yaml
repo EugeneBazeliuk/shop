@@ -1,0 +1,158 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    fields:
+
+        # Items
+        items:
+            tab: djetson.shop::lang.form.tab.products
+            type: partial
+            path: relation_items
+
+        # Customer
+        customer:
+            tab: djetson.shop::lang.form.tab.shipping
+            label: djetson.shop::lang.order.customer
+            span: full
+            type: recordfinder
+            list: ~/plugins/rainlab/user/models/user/columns.yaml
+            prompt: djetson.shop::lang.order.customer_prompt
+            nameFrom: name
+            descriptionFrom: email
+
+        # Shipping
+        shipping_method:
+            tab: djetson.shop::lang.form.tab.shipping
+            label: djetson.shop::lang.form.shipping_method
+            span: full
+            type: relation
+            emptyOption: djetson.shop::lang.form.dropdown_empty
+            context: [create]
+
+        customer_name:
+            tab: djetson.shop::lang.form.tab.shipping
+            label: djetson.shop::lang.form.customer_name
+            type: text
+            span: auto
+            dependsOn: customer
+
+        customer_surname:
+            tab: djetson.shop::lang.form.tab.shipping
+            label: djetson.shop::lang.form.customer_surname
+            type: text
+            span: auto
+            dependsOn: customer
+
+        customer_email:
+            tab: djetson.shop::lang.form.tab.shipping
+            label: djetson.shop::lang.form.customer_email
+            type: text
+            span: auto
+            dependsOn: customer
+
+        customer_phone:
+            tab: djetson.shop::lang.form.tab.shipping
+            label: djetson.shop::lang.form.customer_phone
+            type: text
+            span: auto
+            dependsOn: customer
+
+        country:
+            tab: djetson.shop::lang.form.tab.shipping
+            label: djetson.shop::lang.form.country
+            type: dropdown
+            span: auto
+            dependsOn: customer
+            placeholder: -- select country --
+
+        state:
+            tab: djetson.shop::lang.form.tab.shipping
+            label: djetson.shop::lang.form.state
+            type: dropdown
+            span: auto
+            dependsOn: [customer, country]
+            placeholder: -- select state --
+
+        address:
+            tab: djetson.shop::lang.form.tab.shipping
+            label: djetson.shop::lang.form.address
+            type: text
+            span: auto
+
+        zip:
+            tab: djetson.shop::lang.form.tab.shipping
+            label: djetson.shop::lang.form.zip
+            type: text
+            span: auto
+
+        shipped_at:
+            tab: djetson.shop::lang.form.tab.shipping
+            label: djetson.shop::lang.form.shipped_at
+            span: left
+            type: datepicker
+            mode: datetime
+            context: [update]
+
+        track:
+            tab: djetson.shop::lang.form.tab.shipping
+            label: djetson.shop::lang.form.track
+            type: text
+            span: auto
+            context: [update]
+
+        # Comment
+        comment:
+            tab: djetson.shop::lang.form.tab.shipping
+            label: djetson.shop::lang.order.comment
+            type: textarea
+            span: full
+            size: hude
+
+        # Payment
+        payment_method:
+            tab: djetson.shop::lang.form.tab.payment
+            label: djetson.shop::lang.form.payment_method
+            span: full
+            type: relation
+            emptyOption: djetson.shop::lang.form.dropdown_empty
+            context: [create]
+
+        paid_at:
+            tab: djetson.shop::lang.form.tab.payment
+            label: djetson.shop::lang.form.shipped_at
+            span: left
+            type: datepicker
+            mode: datetime
+            context: [update]
+
+secondaryTabs:
+    fields:
+
+        invoice:
+            type: fileupload
+            mode: image
+            span: full
+
+        # Shipping info
+        shipping_info:
+            type: partial
+            path: $/djetson/shop/models/order/_field_shipping_info.htm
+
+
+
+
+
+#        # State closed
+#        is_draft:
+#            label: djetson.shop::lang.form.is_draft
+#            type: switch
+#            default: 0
+
+
+#
+#        # Payment address
+#        payment_address:
+#            type: partial
+#            path: $/djetson/shop/controllers/orders/old/partials/_field_payment_address.htm

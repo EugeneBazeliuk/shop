@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Import Template
+
+# Model Form Field configuration
+form: $/djetson/shop/models/importtemplate/fields.yaml
+
+# Model Class name
+modelClass: Djetson\Shop\Models\ImportTemplate
+
+# Default redirect location
+defaultRedirect: djetson/shop/importtemplates
+
+# Create page
+create:
+    title: Create Import Template
+    redirect: djetson/shop/importtemplates/update/:id
+    redirectClose: djetson/shop/importtemplates
+
+# Update page
+update:
+    title: Edit Import Template
+    redirect: djetson/shop/importtemplates
+    redirectClose: djetson/shop/importtemplates
+
+# Preview page
+preview:
+    title: Preview Import Template

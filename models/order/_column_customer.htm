@@ -1,0 +1,5 @@
+<?php if ($record->customer->is_tricky): ?>
+    <b class="text-danger"><?= e($record->customer->name) ?></b>
+<?php else: ?>
+    <?= e($record->customer->name) ?>
+<?php endif ?>

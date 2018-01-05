@@ -1,0 +1,26 @@
+<?php if (count($items)): ?>
+    <div class="list-preview list-flush">
+        <div class="control-list">
+            <table class="table data" data-control="rowlink">
+                <thead>
+                <tr>
+                    <th><span><?= e(trans('djetson.shop::lang.list.name')) ?></span></th>
+                    <th class="text-right"><span><?= e(trans('djetson.shop::lang.list.sku')) ?></span></th>
+                    <th style="width: 10%" class="text-right"><span><?= e(trans('djetson.shop::lang.list.price')) ?></span></th>
+                    <th style="width: 10%" class="text-right"><span><?= e(trans('djetson.shop::lang.list.total')) ?></span></th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php foreach ($items as $item): ?>
+                <tr>
+                    <td><?= e($item->quantity) ?> x <?= e($item->product->name) ?></td>
+                    <td class="text-right"><?= e($item->product->sku) ?></td>
+                    <td class="text-right"><?= e($item->price) ?></td>
+                    <td class="text-right"><?= e($item->sum) ?></td>
+                </tr>
+                <?php endforeach ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
+<?php endif ?>

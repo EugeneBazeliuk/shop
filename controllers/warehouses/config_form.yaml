@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Warehouse
+
+# Model Form Field configuration
+form: $/djetson/shop/models/warehouse/fields.yaml
+
+# Model Class name
+modelClass: Djetson\Shop\Models\Warehouse
+
+# Default redirect location
+defaultRedirect: djetson/shop/warehouses
+
+# Create page
+create:
+    title: Create Warehouse
+    redirect: djetson/shop/warehouses/update/:id
+    redirectClose: djetson/shop/warehouses
+
+# Update page
+update:
+    title: Edit Warehouse
+    redirect: djetson/shop/warehouses
+    redirectClose: djetson/shop/warehouses
+
+# Preview page
+preview:
+    title: Preview Warehouse

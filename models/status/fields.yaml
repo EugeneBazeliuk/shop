@@ -1,0 +1,54 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    is_active:
+        label: djetson.shop::lang.form.is_active
+        type: switch
+        span: left
+        default: false
+
+    name:
+        label: djetson.shop::lang.form.name
+        type: text
+        span: left
+        required: true
+
+    color:
+        label: djetson.shop::lang.form.color
+        span: left
+        type: colorpicker
+
+    # MAIL TEMPLATE
+    mail_template_section:
+        label: djetson.shop::lang.form.mail_template_section
+        type: section
+
+    is_send_email:
+        label: djetson.shop::lang.form.is_send_email
+        type: switch
+        span: left
+        default: false
+
+    is_attach_invoice:
+        label: djetson.shop::lang.form.is_attach_invoice
+        type: switch
+        span: left
+        default: false
+        trigger:
+            action: show
+            field: is_send_email
+            condition: checked
+
+    mail_template:
+        label: djetson.shop::lang.form.mail_template
+        type: relation
+        select: code
+        span: left
+        emptyOption: djetson.shop::lang.form.mail_template_empty
+        trigger:
+            action: show
+            field: is_send_email
+            condition: checked

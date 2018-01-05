@@ -1,0 +1,15 @@
+<!-- START NAME -->
+<div class="scoreboard-item title-value">
+    <h4><?= e(trans('djetson.shop::lang.form.name')) ?></h4>
+    <p><?= e($formModel->name) ?></p>
+    <p class="description"><?= e(trans('djetson.shop::lang.form.created_at')) ?>: <?= e($formModel->created_at->toFormattedDateString()) ?></p>
+</div>
+<!-- END NAME -->
+
+<!-- START CODE -->
+<div class="scoreboard-item title-value">
+    <h4><?= e(trans('djetson.shop::lang.form.code')) ?></h4>
+    <p><?= e($formModel->code) ?></p>
+    <p class="description"><?= e(trans('djetson.shop::lang.form.quantity')) ?>: <?= e($formModel->countProducts) ?></p>
+</div>
+<!-- END CODE -->

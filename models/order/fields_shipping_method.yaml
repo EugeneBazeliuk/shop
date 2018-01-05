@@ -1,0 +1,12 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    # Shipping method
+    shipping_method:
+        label: djetson.shop::lang.form.shipping_method
+        span: full
+        type: relation
+        emptyOption: djetson.shop::lang.form.dropdown_empty

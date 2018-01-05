@@ -1,0 +1,25 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+
+    name:
+        label: djetson.shop::lang.list.name
+        type: label
+        searchable: 1
+
+    is_send_email:
+        label: djetson.shop::lang.list.is_send_email
+        type: switch_colored
+        width: 1%
+
+    is_attach_invoice:
+        label: djetson.shop::lang.list.is_attach_invoice
+        type: switch_colored
+        width: 1%
+
+    is_active:
+        label: djetson.shop::lang.list.is_active
+        type: switch_colored
+        width: 1%

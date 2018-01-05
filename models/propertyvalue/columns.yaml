@@ -1,0 +1,9 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+
+    value:
+        label: djetson.shop::lang.form.value
+        type: text

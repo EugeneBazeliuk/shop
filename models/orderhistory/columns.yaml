@@ -1,0 +1,14 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+
+    message:
+        label: djetson.shop::lang.list.message
+        select: type
+
+    created_at:
+        label: djetson.shop::lang.list.created_at
+        type: timetense
+        width: 140px

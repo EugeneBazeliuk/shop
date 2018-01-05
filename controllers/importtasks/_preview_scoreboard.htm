@@ -1,0 +1,54 @@
+<div class="scoreboard">
+    <div data-control="toolbar">
+
+        <div class="scoreboard-item title-value">
+            <h4><?= e(trans('djetson.shop::lang.import_task.id')) ?></h4>
+            <p><?= e($formModel->id) ?></p>
+        </div>
+
+        <div class="scoreboard-item title-value">
+            <h4><?= e(trans('djetson.shop::lang.import_task.status')) ?></h4>
+            <p><?= e($formModel->status) ?></p>
+        </div>
+
+        <div class="scoreboard-item title-value">
+            <h4><?= e(trans('djetson.shop::lang.import_task.template')) ?></h4>
+            <p><?= e($formModel->template->name) ?></p>
+        </div>
+
+        <?php if ($formModel->details): ?>
+
+            <div class="scoreboard-item title-value">
+                <h4><?= e(trans('djetson.shop::lang.import_task.created')) ?></h4>
+                <p><?= e($formModel->details['created']) ?></p>
+            </div>
+
+            <div class="scoreboard-item title-value">
+                <h4><?= e(trans('djetson.shop::lang.import_task.updated')) ?></h4>
+                <p><?= e($formModel->details['updated']) ?></p>
+            </div>
+
+            <div class="scoreboard-item title-value">
+                <h4><?= e(trans('djetson.shop::lang.import_task.error_count')) ?></h4>
+                <p><?= e($formModel->details['errorCount']) ?></p>
+            </div>
+
+            <div class="scoreboard-item title-value">
+                <h4><?= e(trans('djetson.shop::lang.import_task.warning_count')) ?></h4>
+                <p><?= e($formModel->details['warningCount']) ?></p>
+            </div>
+
+            <div class="scoreboard-item title-value">
+                <h4><?= e(trans('djetson.shop::lang.import_task.skipped_count')) ?></h4>
+                <p><?= e($formModel->details['skippedCount']) ?></p>
+            </div>
+
+        <?php endif ?>
+
+        <div class="scoreboard-item title-value">
+            <h4><?= e(trans('djetson.shop::lang.import_task.file')) ?></h4>
+            <p class="text-center"><a class="icon-upload" href="<?= e($formModel->file->getPath()) ?> " target="_blank"></a></p>
+        </div>
+
+    </div>
+</div>

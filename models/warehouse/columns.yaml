@@ -1,0 +1,25 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+
+    name:
+        label: djetson.shop::lang.list.name
+        searchable: 1
+
+    code:
+        label: djetson.shop::lang.list.code
+        width: 20%
+        searchable: 1
+
+    count_products:
+        label: djetson.shop::lang.list.quantity
+        type: number
+        width: 20%
+        searchable: 1
+
+    is_active:
+        label: djetson.shop::lang.list.is_active
+        type: switch_colored
+        width: 1%

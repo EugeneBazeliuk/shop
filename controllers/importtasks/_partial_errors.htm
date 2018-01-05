@@ -1,0 +1,18 @@
+<?php if (count($data)): ?>
+    <table class="table data">
+        <thead>
+            <tr>
+                <th width="200px"><span><?= e(trans('djetson.shop::lang.import_task.error_row')) ?></span></th>
+                <th><span><?= e(trans('djetson.shop::lang.import_task.error_message')) ?></span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($data as $row => $message): ?>
+            <tr>
+                <td width="200px"><?= e($row) ?></td>
+                <td><?= e($message) ?></td>
+            </tr>
+            <?php endforeach ?>
+        </tbody>
+    </table>
+<?php endif ?>

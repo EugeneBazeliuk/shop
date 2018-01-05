@@ -1,0 +1,28 @@
+<?php Block::put('breadcrumb') ?>
+    <ul>
+        <li><a href="<?= Backend::url('djetson/shop/importtask') ?>"><?= e(trans('djetson.shop::lang.shop.import_tasks')) ?></a></li>
+        <li><?= e($this->pageTitle) ?></li>
+    </ul>
+<?php Block::endPut() ?>
+
+<?php if (!$this->fatalError): ?>
+
+    <?= $this->makePartial('preview_scoreboard'); ?>
+
+    <?php if ($formModel->details && $formModel->details['hasMessages']): ?>
+        <?= $this->makePartial('partial_details', ['details' => $formModel->details]); ?>
+    <?php endif ?>
+
+    <div class="layout-item stretch layout-column">
+        <?= $this->formRenderPreview() ?>
+    </div>
+
+<?php else: ?>
+
+    <p class="flash-message static error"><?= e(trans($this->fatalError)) ?></p>
+
+<?php endif ?>
+
+<a href="<?= Backend::url('djetson/shop/importtasks') ?>" class="btn btn-default oc-icon-chevron-left">
+    <?= e(trans('djetson.shop::lang.import_task.return_link')) ?>
+</a>

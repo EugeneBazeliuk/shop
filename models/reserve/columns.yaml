@@ -1,0 +1,50 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+
+    code:
+        label: djetson.shop::lang.list.code
+        type: text
+        searchable: 1
+
+    product_name:
+        label: djetson.shop::lang.list.name
+        relation: product
+        select: name
+        searchable: 1
+
+    product_sku:
+        label: djetson.shop::lang.list.sku
+        relation: product
+        select: sku
+        searchable: 1
+
+    warahouse_name:
+        label: djetson.shop::lang.list.warehouse
+        relation: warehouse
+        select: name
+        searchable: 1
+
+    quantity:
+        label: djetson.shop::lang.list.quantity
+        type: text
+        width: 1%
+
+    author:
+        label: djetson.shop::lang.list.author
+        relation: author
+        select: login
+        searchable: true
+        width: 10%
+
+    created_at:
+        label: djetson.shop::lang.list.created_at
+        type: timetense
+        width: 140px
+
+    reserved_to:
+        label: djetson.shop::lang.list.reserved_to
+        type: timetense
+        width: 140px

@@ -1,0 +1,59 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    name:
+        label: djetson.shop::lang.form.name
+        type: text
+        span: left
+        required: 1
+
+    provider:
+        label: djetson.shop::lang.form.provider
+        type: dropdown
+        span: left
+        required: 1
+        emptyOption: djetson.shop::lang.form.provider_empty
+
+    is_active:
+        label: djetson.shop::lang.form.is_active
+        type: switch
+        default: 0
+
+    is_allow_in_order:
+        label: djetson.shop::lang.form.is_allow_in_order
+        type: switch
+        default: 0
+
+    is_allow_free_shipping:
+        label: djetson.shop::lang.form.is_allow_free_shipping
+        type: switch
+        default: 0
+
+tabs:
+    fields:
+
+        cost:
+            tab: djetson.shop::lang.form.tab.settings
+            label: djetson.shop::lang.form.cost
+            type: number
+            span: left
+            default: 0
+            dependsOn: is_allow_in_order
+            trigger:
+                action: show
+                field: is_allow_in_order
+                condition: checked
+
+        free_shipping_limit:
+            tab: djetson.shop::lang.form.tab.settings
+            label: djetson.shop::lang.form.free_shipping_limit
+            type: number
+            span: left
+            default: 0
+            trigger:
+                action: show
+                field: is_allow_free_shipping
+                condition: checked

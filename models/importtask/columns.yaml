@@ -1,0 +1,47 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+
+    id:
+        label: djetson.shop::lang.import_task.id
+        searchable: yes
+        width: 75px
+
+    status:
+        label: djetson.shop::lang.import_task.status
+        type: text
+
+    details[created]:
+        label: djetson.shop::lang.import_task.created
+        type: text
+        width: 1%
+
+    details[updated]:
+        label: djetson.shop::lang.import_task.updated
+        type: text
+        width: 1%
+
+    details[errorCount]:
+        label: djetson.shop::lang.import_task.error_count
+        type: text
+        width: 1%
+
+    details[warningCount]:
+        label: djetson.shop::lang.import_task.warning_count
+        type: text
+        width: 1%
+
+    details[skippedCount]:
+        label: djetson.shop::lang.import_task.skipped_count
+        type: text
+        width: 1%
+
+    done_at:
+        label: djetson.shop::lang.import_task.done_at
+        width: 180px
+
+    created_at:
+        label: djetson.shop::lang.import_task.created_at
+        width: 180px

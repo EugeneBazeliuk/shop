@@ -1,0 +1,16 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    file:
+        label: djetson.shop::lang.import_task.file
+        type: fileupload
+        mode: file
+        fileTypes: xml, csv
+
+    template:
+        label: djetson.shop::lang.import_task.template
+        type: relation
+        emptyOption: djetson.shop::lang.import_task.template_empty

@@ -1,0 +1,107 @@
+# Plugin information
+plugin:
+    name: djetson.shop::lang.plugin.name
+    description: djetson.shop::lang.plugin.description
+    author: Djetson
+    icon: oc-icon-shopping-cart
+
+# Plugin permissions
+permissions:
+    djetson.shop.access_product:
+        tab: djetson.shop::lang.plugin.name
+        label: djetson.shop::lang.permissions.access_product
+    djetson.shop.access_categories:
+        tab: djetson.shop::lang.plugin.name
+        label: djetson.shop::lang.permissions.access_categories
+    djetson.shop.access_manufacturers:
+        tab: djetson.shop::lang.plugin.name
+        label: djetson.shop::lang.permissions.access_manufacturers
+    djetson.shop.access_orders:
+        tab: djetson.shop::lang.plugin.name
+        label: djetson.shop::lang.permissions.access_orders
+    djetson.shop.access_currencies:
+        tab: djetson.shop::lang.plugin.name
+        label: djetson.shop::lang.permissions.access_currencies
+    djetson.shop.access_shipping_methods:
+        tab: djetson.shop::lang.plugin.name
+        label: djetson.shop::lang.permissions.access_shipping_methods
+    djetson.shop.access_payment_methods:
+        tab: djetson.shop::lang.plugin.name
+        label: djetson.shop::lang.permissions.access_payment_methods
+    djetson.shop.access_order_statuses:
+        tab: djetson.shop::lang.plugin.name
+        label: djetson.shop::lang.permissions.access_order_statuses
+    djetson.shop.access_binding:
+        tab: djetson.shop::lang.plugin.name
+        label: djetson.shop::lang.permissions.access_binding
+    djetson.shop.access_binding_type:
+        tab: djetson.shop::lang.plugin.name
+        label: djetson.shop::lang.permissions.access_binding_type
+    djetson.shop.access_properties:
+        tab: djetson.shop::lang.plugin.name
+        label: djetson.shop::lang.permissions.access_properties
+    djetson.shop.access_property_groups:
+        tab: djetson.shop::lang.plugin.name
+        label: djetson.shop::lang.permissions.access_property_groups
+    djetson.shop.access_property_values:
+        tab: djetson.shop::lang.plugin.name
+        label: djetson.shop::lang.permissions.access_property_values
+
+# Plugin settings
+settings:
+    store:
+        label: djetson.shop::lang.settings.label
+        description: djetson.shop::lang.settings.description
+        category: djetson.shop::lang.settings.categories.shop
+        icon: icon-shopping-cart
+        class: Djetson\Shop\Models\Settings
+        order: 1
+    currencies:
+        label: djetson.shop::lang.currencies.label
+        description: djetson.shop::lang.currencies.description
+        category: djetson.shop::lang.settings.categories.shop
+        icon: icon-shopping-cart
+        url: /backend/djetson/shop/currencies
+        order: 2
+    shipping_methods:
+        label: djetson.shop::lang.shipping_methods.label
+        description: djetson.shop::lang.shipping_methods.description
+        category: djetson.shop::lang.settings.categories.shop
+        icon: icon-shopping-cart
+        url: /backend/djetson/shop/shippingmethods
+        order: 3
+    payment_methods:
+        label: djetson.shop::lang.payment_methods.label
+        description: djetson.shop::lang.payment_methods.description
+        category: djetson.shop::lang.settings.categories.shop
+        icon: icon-shopping-cart
+        url: /backend/djetson/shop/paymentmethods
+        order: 4
+    binding_types:
+        label: djetson.shop::lang.binding_types.label
+        description: djetson.shop::lang.binding_types.description
+        category: djetson.shop::lang.settings.categories.shop
+        icon: icon-shopping-cart
+        url: /backend/djetson/shop/bindingtypes
+        order: 5
+    properties:
+        label: djetson.shop::lang.properties.label
+        description: djetson.shop::lang.properties.description
+        category: djetson.shop::lang.settings.categories.shop
+        icon: icon-shopping-cart
+        url: /backend/djetson/shop/properties
+        order: 6
+    statuses:
+        label: djetson.shop::lang.statuses.label
+        description: djetson.shop::lang.statuses.description
+        category: djetson.shop::lang.settings.categories.shop
+        icon: icon-shopping-cart
+        url: /backend/djetson/shop/statuses
+        order: 7
+    import_templates:
+        label: djetson.shop::lang.import_templates.label
+        description: djetson.shop::lang.import_templates.description
+        category: djetson.shop::lang.settings.categories.shop
+        icon: icon-shopping-cart
+        url: /backend/djetson/shop/importtemplates
+        order: 8

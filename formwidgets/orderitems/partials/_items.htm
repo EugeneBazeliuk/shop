@@ -1,0 +1,14 @@
+<div id="order-items">
+    <?= $this->makePartial('list', ['items' => $model->items()->withDeferred($this->sessionKey)->get()]) ?>
+</div>
+
+<p>
+    <a
+        href="javascript:;"
+        class="btn btn-secondary oc-icon-plus"
+        data-control="popup"
+        data-handler="<?= $this->getEventHandler('onLoadCreateItemForm') ?>"
+        data-size="large">
+        Add item
+    </a>
+</p>

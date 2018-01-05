@@ -1,0 +1,9 @@
+# ===================================
+#  Pivot Column Definitions
+# ===================================
+
+fields:
+    pivot[quantity]:
+        label: djetson.store::lang.form.quantity
+        type: number
+        required: 1

@@ -1,0 +1,47 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    name:
+        label: djetson.shop::lang.form.name
+        type: text
+        span: auto
+
+    code:
+        label: djetson.shop::lang.form.code
+        type: text
+        span: auto
+        preset:
+            field: name
+            type: slug
+
+    description:
+        label: djetson.shop::lang.form.description
+        type: textarea
+        size: hude
+        span: full
+
+    is_active:
+        label: djetson.shop::lang.form.is_active
+        type: switch
+        span: left
+
+tabs:
+    fields:
+
+        products@preview:
+            tab: djetson.shop::lang.form.tab.products
+            type: partial
+            path: relation_products_readonly
+
+        products@update:
+            tab: djetson.shop::lang.form.tab.products
+            type: partial
+            path: relation_products
+
+        logs:
+            tab: djetson.shop::lang.form.tab.log
+            type: partial
+            path: relation_logs

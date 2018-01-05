@@ -1,0 +1,34 @@
+<table class="table data text-right" style="margin-top: -20px">
+    <tbody>
+
+        <!-- START SUBTOTAL -->
+        <tr>
+            <td>sub Total</td>
+            <td width="180px"><?= e($model->text_sub_total) ?></td>
+        </tr>
+        <!-- END SUBTOTAL -->
+
+        <?php if ($model->shipping_method): ?>
+        <!-- START SHIPPING -->
+        <tr>
+            <td><?= e($model->shipping_method->name) ?></td>
+            <td width="180px"><?= e($model->text_shipping_total) ?></td>
+        </tr>
+        <!-- END SHIPPING -->
+        <?php endif ?>
+
+        <?php if ($model->payment_method): ?>
+        <!-- START PAYMENT -->
+        <tr>
+            <td><?= e($model->payment_method->name) ?></td>
+            <td width="180px"><?= e($model->text_payment_total) ?></td>
+        </tr>
+        <!-- END PAYMENT -->
+        <?php endif ?>
+
+        <tr>
+            <td>Total</td>
+            <td width="180px"><?= e($model->text_total) ?></td>
+        </tr>
+    </tbody>
+</table>

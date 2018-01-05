@@ -1,0 +1,14 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+values:
+    deferredBinding: true
+    label: djetson.shop::lang.property_values.label
+    view:
+        recordsPerPage: 10
+        toolbarButtons: create|delete
+        list: $/djetson/shop/models/propertyvalue/columns.yaml
+    manage:
+        recordsPerPage: 10
+        form: $/djetson/shop/models/propertyvalue/fields.yaml

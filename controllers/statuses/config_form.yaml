@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: djetson.shop::lang.statuses.label
+
+# Model Form Field configuration
+form: $/djetson/shop/models/status/fields.yaml
+
+# Model Class name
+modelClass: Djetson\Shop\Models\Status
+
+# Default redirect location
+defaultRedirect: djetson/shop/statuses
+
+# Create page
+create:
+    title: djetson.shop::lang.statuses.create
+    redirect: djetson/shop/statuses/update/:id
+    redirectClose: djetson/shop/statuses
+
+# Update page
+update:
+    title: djetson.shop::lang.statuses.update
+    redirect: djetson/shop/statuses
+    redirectClose: djetson/shop/statuses
+
+# Preview page
+preview:
+    title: djetson.shop::lang.statuses.preview

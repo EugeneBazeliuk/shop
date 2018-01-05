@@ -1,0 +1,7 @@
+.git
+vendor
+tests
+behaviors
+componentsOld
+phpunit.xml
+composer.lock

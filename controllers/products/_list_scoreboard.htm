@@ -1,0 +1,13 @@
+<div class="scoreboard">
+    <div data-control="toolbar">
+
+        <div class="scoreboard-item control-chart" data-control="chart-pie">
+            <ul>
+                <li data-color="#95b753"><?= e(trans('djetson.shop::lang.products.scoreboard_enabled_count')) ?> <span><?= $scoreboard['enabled_count'] ?></span></li>
+                <li data-color="#e5a91a"><?= e(trans('djetson.shop::lang.products.scoreboard_disabled_count')) ?> <span><?= $scoreboard['disabled_count'] ?></span></li>
+                <li data-color="#cc3300"><?= e(trans('djetson.shop::lang.products.scoreboard_deleted_count')) ?> <span><?= $scoreboard['deleted_count'] ?></span></li>
+            </ul>
+        </div>
+
+    </div>
+</div>

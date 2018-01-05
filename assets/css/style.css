@@ -1,0 +1,32 @@
+.list-cell-type-price {
+    text-align: right;
+}
+
+.list-cell-type-switch_colored {
+    text-align: center;
+}
+
+.btn-label {
+    padding: 1px 6px !important;
+    font-size: 11px;
+    font-weight: 300;
+    color: #fff;
+    box-shadow: none
+}
+
+table.table.data tfoot {
+    /*background: red;*/
+}
+
+table.table.data tfoot tr.total {
+    border-top: 2px solid #d4d8da !important;
+}
+
+table.table.data.table-items {
+    border: 1px solid #eeeeee;
+    border-top: none;
+}
+
+table.table.data.table-items > thead > tr > th {
+    border-top: none !important;
+}

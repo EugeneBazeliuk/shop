@@ -1,0 +1,44 @@
+# ===================================
+#  Extended Rainlab.User Fields
+# ===================================
+
+fields:
+
+    orders:
+        tab: Orders
+        type: partial
+        path: $/djetson/shop/controllers/users/_relation_orders.htm
+
+    phone:
+        tab: Customer
+        label: phone
+        span: left
+
+    address:
+        tab: Customer
+        label: address
+        span: auto
+
+    country:
+        tab: Customer
+        label: country
+        type: dropdown
+        span: left
+
+    state:
+        tab: Customer
+        label: state
+        type: dropdown
+        span: right
+        dependsOn: country
+
+    zip:
+        tab: Customer
+        label: zip
+        span: auto
+
+    is_tricky:
+        tab: Customer
+        label: Is tricky
+        type: switch
+        span: full

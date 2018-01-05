@@ -1,0 +1,45 @@
+<div class="scoreboard-item title-value">
+    <h4><?= e(trans('djetson.shop::lang.form.invoice')) ?></h4>
+    <p><?= e($formModel->id) ?></p>
+    <p class="description"><?= e($formModel->created_at) ?></p>
+</div>
+
+<?php if ($formModel->status): ?>
+    <div class="scoreboard-item title-value">
+        <h4><?= e(trans('djetson.shop::lang.form.status')) ?></h4>
+        <p><?= e($formModel->status->name) ?></p>
+        <p class="description"><?= e(trans('djetson.shop::lang.form.updated_at')) ?>: <?= e($formModel->updated_at) ?></p>
+    </div>
+<?php endif ?>
+
+<?php if ($formModel->customer): ?>
+<div class="scoreboard-item title-value">
+    <h4><?= e(trans('rainlab.user::lang.user.label')) ?></h4>
+    <?php if ($formModel->customer->name): ?>
+    <p><?= e($formModel->customer->name) ?></p>
+    <?php else: ?>
+    <p><em><?= e(trans('rainlab.user::lang.user.name_empty')) ?></em></p>
+    <?php endif ?>
+    <p class="description">
+        <a href="mailto:<?= e($formModel->customer->email) ?>">
+            <?= e($formModel->customer->email) ?>
+        </a>
+    </p>
+</div>
+<?php endif ?>
+
+<?php if ($formModel->is_shipped): ?>
+    <div class="scoreboard-item title-value">
+        <h4><?= e(trans('djetson.shop::lang.form.shipped')) ?></h4>
+        <p><?= e($formModel->shipped_at->toFormattedDateString()) ?></p>
+        <p class="description"><?= e($formModel->track) ?></p>
+    </div>
+<?php endif ?>
+
+<?php if ($formModel->is_paid): ?>
+    <div class="scoreboard-item title-value">
+        <h4><?= e(trans('djetson.shop::lang.form.paid')) ?></h4>
+        <p><?= e($formModel->paid_at->toFormattedDateString()) ?></p>
+        <p class="description"></p>
+    </div>
+<?php endif ?>

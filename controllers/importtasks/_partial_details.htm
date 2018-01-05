@@ -1,0 +1,18 @@
+<div class="control-tabs master-tabs" data-control="tab">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#import-task-errors">Errors</a></li>
+        <li><a href="#import-task-warnings">Warnings</a></li>
+        <li><a href="#import-task-skipped">Skipped</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="import-task-errors" class="tab-pane active">
+            <?= $this->makePartial('partial_errors', ['data' => $details['errors']]); ?>
+        </div>
+        <div id="import-task-warnings" class="tab-pane">
+            <?= $this->makePartial('partial_errors', ['data' => $details['warnings']]); ?>
+        </div>
+        <div id="import-task-skipped" class="tab-pane">
+            <?= $this->makePartial('partial_errors', ['data' => $details['skipped']]); ?>
+        </div>
+    </div>
+</div>

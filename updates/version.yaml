@@ -1,0 +1,33 @@
+1.0.1:
+    - First version of Shop.
+
+    # Product section
+    - create_products_table.php
+    - create_bindings_table.php
+    - create_categories_table.php
+    - create_manufacturers_table.php
+    - create_properties_table.php
+    - create_reserves_table.php
+    - create_warehouses_table.php
+    - create_warehouse_logs_table.php
+
+    # Order section
+    - create_orders_table.php
+    - create_order_items_table.php
+    - create_order_statuses_table.php
+    - create_order_logs_table.php
+    - create_payment_methods_table.php
+    - create_shipping_methods_table.php
+    - create_statuses_table.php
+
+    - create_currencies_table.php
+
+    # Import
+    - create_import_tasks_table.php
+    - create_import_templates_table.php
+
+    # Extend Rainlab.User
+    - extend_users_table.php
+
+    # Seeders
+    - seed_init.php

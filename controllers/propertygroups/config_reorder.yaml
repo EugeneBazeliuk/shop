@@ -1,0 +1,17 @@
+# ===================================
+#  Reorder Behavior Config
+# ===================================
+
+# Reorder Title
+title: djetson.shop::lang.property_groups.reorder
+
+# Attribute name
+nameFrom: name
+
+# Model Class name
+modelClass: Djetson\Shop\Models\PropertyGroup
+
+# Toolbar widget configuration
+toolbar:
+    # Partial for toolbar buttons
+    buttons: reorder_toolbar

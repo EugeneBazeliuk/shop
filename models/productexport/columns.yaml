@@ -1,0 +1,40 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+
+    # BASE
+    name: djetson.shop::lang.form.name
+    slug: djetson.shop::lang.form.slug
+    description: djetson.shop::lang.form.description
+
+    # CODE
+    sku: djetson.shop::lang.form.sku
+    isbn: djetson.shop::lang.form.isbn
+
+    # PRICE
+    price: djetson.shop::lang.form.price
+
+    # DELIVERY
+    package_width: djetson.shop::lang.form.package_width
+    package_height: djetson.shop::lang.form.package_height
+    package_depth: djetson.shop::lang.form.package_depth
+    package_weight: djetson.shop::lang.form.package_weight
+
+    # SEO
+    meta_title: djetson.shop::lang.form.meta_title
+    meta_keywords: djetson.shop::lang.form.meta_keywords
+    meta_description: djetson.shop::lang.form.meta_description
+
+    # RELATIONS
+    bindings: djetson.shop::lang.form.bindings
+    category: djetson.shop::lang.form.category
+    categories: djetson.shop::lang.form.categories
+    manufacturer: djetson.shop::lang.form.manufacturer
+    properties: djetson.shop::lang.form.properties
+
+    # STATES
+    is_active: djetson.shop::lang.form.is_active
+    is_searchable: djetson.shop::lang.form.is_searchable
+    is_unique_text: djetson.shop::lang.form.is_unique_text

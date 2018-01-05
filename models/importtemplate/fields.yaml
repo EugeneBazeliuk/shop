@@ -1,0 +1,52 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    name:
+        label: djetson.shop::lang.form.name
+        type: text
+        span: left
+        required: 1
+
+    description:
+        label: djetson.shop::lang.form.description
+        type: textarea
+        span: left
+        size: hude
+
+    is_active:
+        label: djetson.shop::lang.form.is_active
+        type: switch
+        default: true
+
+tabs:
+    fields:
+
+        file:
+            tab: djetson.shop::lang.form.tab.general
+            label: djetson.shop::lang.form.file
+            type: fileupload
+            mode: file
+            span: auto
+            fileTypes: csv,xml
+            useCaption: false
+
+        mapping:
+            tab: djetson.shop::lang.form.tab.general
+            label: djetson.shop::lang.form.mapping
+            span: left
+            type: datatable
+            toolbar: 0
+            dependsOn: [file]
+            columns:
+                key:
+                    title: djetson.shop::lang.form.key
+                    readOnly: 1
+                val:
+                    title: djetson.shop::lang.form.value
+                    readOnly: 1
+                column:
+                    title: djetson.shop::lang.form.column
+                    type: dropdown

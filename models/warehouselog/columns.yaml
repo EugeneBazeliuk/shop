@@ -1,0 +1,33 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+
+    product_name:
+        label: djetson.shop::lang.list.name
+        relation: product
+        select: name
+        searchable: 1
+        width: 20%
+
+    product_sku:
+        label: djetson.shop::lang.list.sku
+        relation: product
+        select: sku
+        searchable: 1
+        width: 20%
+
+    text_event:
+        label: djetson.shop::lang.list.event
+        type: text
+
+    quantity:
+        label: djetson.shop::lang.list.quantity
+        type: number
+        width: 10%
+
+    created_at:
+        label: djetson.shop::lang.list.created_at
+        type: timetense
+        width: 180px

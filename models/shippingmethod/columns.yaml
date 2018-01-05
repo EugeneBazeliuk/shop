@@ -1,0 +1,37 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+
+    name:
+        label: djetson.shop::lang.list.name
+        type: text
+        searchable: 1
+
+    provider:
+        label: djetson.shop::lang.list.provider
+        type: text
+        width: 1%
+        searchable: 1
+
+    cost:
+        label: djetson.shop::lang.list.cost
+        type: price
+        width: 10%
+        searchable: 0
+
+    is_allow_in_order:
+        label: djetson.shop::lang.list.is_allow_in_order
+        type: switch_colored
+        width: 1%
+
+    is_allow_free_shipping:
+        label: djetson.shop::lang.list.is_allow_free_shipping
+        type: switch_colored
+        width: 1%
+
+    is_active:
+        label: djetson.shop::lang.list.is_active
+        type: switch_colored
+        width: 1%

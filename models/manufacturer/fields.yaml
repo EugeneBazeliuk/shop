@@ -1,0 +1,79 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: djetson.shop::lang.form.name
+        type: text
+        span: auto
+        required: 1
+
+    slug:
+        label: djetson.shop::lang.form.slug
+        type: text
+        span: auto
+        required: 1
+        preset:
+            field: name
+            type: slug
+
+tabs:
+    fields:
+
+        # Details
+        description:
+            tab: djetson.shop::lang.form.tab.general
+            label: djetson.shop::lang.form.description
+            type: richeditor
+            size: large
+
+        # SEO
+        meta_title:
+            tab: djetson.shop::lang.form.tab.seo
+            label: djetson.shop::lang.form.meta_title
+            span: left
+            type: text
+
+        meta_keywords:
+            tab: djetson.shop::lang.form.tab.seo
+            label: djetson.shop::lang.form.meta_keywords
+            type: textarea
+            span: left
+            size: small
+
+        meta_description:
+            tab: djetson.shop::lang.form.tab.seo
+            label: djetson.shop::lang.form.meta_description
+            type: textarea
+            span: left
+            size: large
+
+secondaryTabs:
+    fields:
+
+        # Image
+        image:
+            type: fileupload
+            mode: image
+            imageHeight: 250
+            imageWidth: 250
+            thumbOptions:
+                mode: crop
+                offset:
+                    - 0
+                    - 0
+                quality: 90
+                sharpen: 0
+                extension: auto
+
+        # State
+        is_active:
+            label: djetson.shop::lang.form.is_active
+            type: switch
+            default: true
+
+        is_searchable:
+            label: djetson.shop::lang.form.is_searchable
+            type: switch
+            default: true

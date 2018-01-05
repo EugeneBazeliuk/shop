@@ -1,0 +1,24 @@
+<?php if (count($formModel->items)): ?>
+    <table class="table data">
+        <thead>
+        <tr>
+            <th><span><?= e(trans('djetson.shop::lang.list.name')) ?></span></th>
+            <th><span><?= e(trans('djetson.shop::lang.list.sku')) ?></span></th>
+            <th style="width: 10%" class="text-right"><span><?= e(trans('djetson.shop::lang.list.quantity')) ?></span></th>
+            <th style="width: 20%" class="text-right"><span><?= e(trans('djetson.shop::lang.list.price')) ?></span></th>
+            <th style="width: 20%" class="text-right"><span><?= e(trans('djetson.shop::lang.list.total')) ?></span></th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php foreach ($formModel->items as $item): ?>
+        <tr>
+            <td><?= e($item['name']) ?></td>
+            <td><?= e($item['sku']) ?></td>
+            <td class="text-right"><?= e($item['quantity']) ?></td>
+            <td class="text-right"><?= e($item['price']) ?></td>
+            <td class="text-right"><?= e($item['total']) ?></td>
+        </tr>
+        <?php endforeach ?>
+        </tbody>
+    </table>
+<?php endif ?>

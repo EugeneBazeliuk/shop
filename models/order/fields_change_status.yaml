@@ -1,0 +1,12 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    # Status
+    status:
+        label: djetson.shop::lang.form.status
+        span: full
+        type: relation
+        emptyOption: djetson.shop::lang.form.dropdown_empty

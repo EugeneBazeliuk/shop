@@ -1,0 +1,77 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+tabs:
+    fields:
+
+        # CURRENCY
+        currency:
+            tab: djetson.shop::lang.form.tab.general
+            label: djetson.shop::lang.form.currency_default
+            type: relation
+            span: left
+            emptyOption: djetson.shop::lang.form.dropdown_empty
+
+        # PRICE FORMAT
+        price_format_section:
+            tab: djetson.shop::lang.form.tab.general
+            label: djetson.shop::lang.form.section.price_format
+            type: section
+
+        price_format_decimal_count:
+            tab: djetson.shop::lang.form.tab.general
+            label: djetson.shop::lang.form.price_format_decimal_count
+            span: left
+
+        price_format_decimal_point:
+            tab: djetson.shop::lang.form.tab.general
+            label: djetson.shop::lang.form.price_format_decimal_point
+            span: left
+
+        price_format_thousands_separator:
+            tab: djetson.shop::lang.form.tab.general
+            label: djetson.shop::lang.form.price_format_thousands_separator
+            span: left
+
+        import_is_active:
+            tab: djetson.shop::lang.form.tab.import
+            label: djetson.shop::lang.form.is_active
+            type: switch
+            span: left
+
+        import_file:
+            tab: djetson.shop::lang.form.tab.import
+            label: djetson.shop::lang.form.file
+            span: left
+            type: mediafinder
+            mode: file
+
+        import_template:
+            tab: djetson.shop::lang.form.tab.import
+            label: djetson.shop::lang.form.template
+            span: left
+            type: relation
+            emptyOption: djetson.shop::lang.form.dropdown_empty
+
+        # STATUSES
+        status_new:
+            tab: djetson.shop::lang.form.tab.statuses
+            label: djetson.shop::lang.form.status_new
+            type: relation
+            span: left
+            emptyOption: djetson.shop::lang.form.dropdown_empty
+
+        status_paid:
+            tab: djetson.shop::lang.form.tab.statuses
+            label: djetson.shop::lang.form.status_paid
+            type: relation
+            span: left
+            emptyOption: djetson.shop::lang.form.dropdown_empty
+
+        status_shipped:
+            tab: djetson.shop::lang.form.tab.statuses
+            label: djetson.shop::lang.form.status_shipped
+            type: relation
+            span: left
+            emptyOption: djetson.shop::lang.form.dropdown_empty

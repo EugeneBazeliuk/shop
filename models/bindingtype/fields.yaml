@@ -1,0 +1,19 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    name:
+        label: djetson.shop::lang.form.name
+        type: text
+        span: auto
+        required: true
+
+    code:
+        label: djetson.shop::lang.form.code
+        span: left
+        type: text
+        preset:
+            field: name
+            type: slug

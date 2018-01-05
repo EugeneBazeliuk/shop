@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: djetson.shop::lang.binding_types.label
+
+# Model Form Field configuration
+form: $/djetson/shop/models/bindingtype/fields.yaml
+
+# Model Class name
+modelClass: Djetson\Shop\Models\BindingType
+
+# Default redirect location
+defaultRedirect: djetson/shop/bindingtypes
+
+# Create page
+create:
+    title: djetson.shop::lang.binding_types.create
+    redirect: djetson/shop/bindingtypes/update/:id
+    redirectClose: djetson/shop/bindingtypes
+
+# Update page
+update:
+    title: djetson.shop::lang.binding_types.update
+    redirect: djetson/shop/bindingtypes
+    redirectClose: djetson/shop/bindingtypes
+
+# Preview page
+preview:
+    title: djetson.shop::lang.binding_types.preview

@@ -1,0 +1,13 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    details:
+        type: partial
+        path: $/djetson/shop/models/orderlog/_field_details.htm
+
+    items:
+        type: partial
+        path: $/djetson/shop/models/orderlog/_field_items.htm

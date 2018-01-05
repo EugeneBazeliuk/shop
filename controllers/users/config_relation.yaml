@@ -1,0 +1,6 @@
+orders:
+    label: djetson.shop::lang.orders.label
+    view:
+        list: $/djetson/shop/models/order/columns.yaml
+        showSorting: false
+        defaultSort: created_at

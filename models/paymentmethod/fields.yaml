@@ -1,0 +1,30 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    name:
+        label: djetson.shop::lang.form.name
+        type: text
+        span: left
+        required: 1
+
+    provider:
+        label: djetson.shop::lang.form.provider
+        type: dropdown
+        span: left
+        required: 1
+        emptyOption: djetson.shop::lang.form.provider_empty
+
+    cost:
+        label: djetson.shop::lang.form.cost
+        type: number
+        span: left
+        default: 0
+
+    is_active:
+        label: djetson.shop::lang.form.is_active
+        type: switch
+        span: left
+        default: 1

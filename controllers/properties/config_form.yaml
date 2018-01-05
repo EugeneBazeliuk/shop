@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: djetson.shop::lang.properties.label
+
+# Model Form Field configuration
+form: $/djetson/shop/models/property/fields.yaml
+
+# Model Class name
+modelClass: Djetson\Shop\Models\Property
+
+# Default redirect location
+defaultRedirect: djetson/shop/properties
+
+# Create page
+create:
+    title: djetson.shop::lang.properties.create
+    redirect: djetson/shop/properties/update/:id
+    redirectClose: djetson/shop/properties
+
+# Update page
+update:
+    title: djetson.shop::lang.properties.update
+    redirect: djetson/shop/properties
+    redirectClose: djetson/shop/properties
+
+# Preview page
+preview:
+    title: djetson.shop::lang.properties.preview

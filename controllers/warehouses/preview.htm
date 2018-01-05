@@ -1,0 +1,31 @@
+<?php Block::put('breadcrumb') ?>
+    <ul>
+        <li><a href="<?= Backend::url('djetson/shop/warehouses') ?>">Warehouses</a></li>
+        <li><?= e($this->pageTitle) ?></li>
+    </ul>
+<?php Block::endPut() ?>
+
+<?php if (!$this->fatalError): ?>
+
+    <div class="scoreboard">
+        <div id="<?= $this->getId('scoreboard') ?>" data-control="toolbar">
+            <?= $this->makePartial('preview_scoreboard') ?>
+        </div>
+    </div>
+
+    <div class="form-buttons">
+        <div data-control="toolbar">
+            <?= $this->makePartial('preview_toolbar') ?>
+        </div>
+    </div>
+
+    <div class="layout-row">
+        <?= $this->formRender(['preview' => true, 'section' => 'primary']) ?>
+    </div>
+
+<?php else: ?>
+
+    <p class="flash-message static error"><?= e($this->fatalError) ?></p>
+    <p><a href="<?= Backend::url('djetson/shop/warehouses') ?>" class="btn btn-default">Return to warehouses list</a></p>
+
+<?php endif ?>

@@ -1,0 +1,32 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    product:
+        label: djetson.shop::lang.form.product
+        type: recordfinder
+        list: $/djetson/shop/models/orderitem/product-columns.yaml
+        prompt: Click the %s button to find a product
+        nameFrom: name
+        descriptionFrom: price
+        scope: isActive
+        context: [create]
+
+    warehouse:
+        label: djetson.shop::lang.form.warehouse
+        type: dropdown
+        emptyOption: djetson.shop::lang.form.dropdown_empty
+        dependsOn: product
+        context: [create]
+
+    price:
+        label: djetson.shop::lang.form.price
+        type: number
+        dependsOn: product
+
+    quantity:
+        label: djetson.shop::lang.form.quantity
+        type: number
+        default: 1

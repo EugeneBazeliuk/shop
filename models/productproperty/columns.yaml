@@ -1,0 +1,27 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+
+    name:
+        label: djetson.shop::lang.list.name
+        type: text
+        searchable: 1
+
+    group:
+        label: djetson.shop::lang.list.group
+        relation: group
+        select: name
+        width: 20%
+
+    pivot[property_value][value]:
+        label: djetson.shop::lang.list.value
+        type: text
+        width: 20%
+        sortable: 0
+
+    is_active:
+        label: djetson.shop::lang.list.is_active
+        type: switch
+        width: 1%

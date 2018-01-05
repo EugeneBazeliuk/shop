@@ -1,0 +1,10 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    value:
+        label: djetson.shop::lang.form.value
+        type: text
+        span: full

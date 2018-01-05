@@ -1,0 +1,22 @@
+# ===================================
+# Filter Scope Definitions
+# ===================================
+
+scopes:
+
+    status:
+        label: djetson.shop::lang.orders.filter_status
+        modelClass: Djetson\Shop\Models\Status
+        nameFrom: name
+        conditions: status_id in (:filtered)
+
+    manager:
+        label: djetson.shop::lang.orders.filter_manager
+        modelClass: Backend\Models\User
+        nameFrom: login
+        conditions: manager_id in (:filtered)
+
+    cteated_date:
+        label: djetson.shop::lang.orders.filter_date
+        type: date
+        conditions: created_at >= ':filtered'

@@ -1,0 +1,21 @@
+# ===================================
+# Filter Scope Definitions
+# ===================================
+
+scopes:
+    category:
+        label: djetson.shop::lang.products.filter_category
+        modelClass: Djetson\Shop\Models\Category
+        nameFrom: name
+        conditions: category_id in (:filtered)
+
+    manufacturer:
+        label: djetson.shop::lang.products.filter_manufacturer
+        modelClass: Djetson\Shop\Models\Manufacturer
+        nameFrom: name
+        conditions: manufacturer_id in (:filtered)
+
+    is_active:
+        label: djetson.shop::lang.products.filter_is_active
+        type: checkbox
+        conditions: is_active = true

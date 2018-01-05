@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: djetson.shop::lang.property_groups.label
+
+# Model Form Field configuration
+form: $/djetson/shop/models/propertygroup/fields.yaml
+
+# Model Class name
+modelClass: Djetson\Shop\Models\PropertyGroup
+
+# Default redirect location
+defaultRedirect: djetson/shop/propertygroups
+
+# Create page
+create:
+    title: djetson.shop::lang.property_groups.create
+    redirect: djetson/shop/propertygroups/update/:id
+    redirectClose: djetson/shop/propertygroups
+
+# Update page
+update:
+    title: djetson.shop::lang.property_groups.update
+    redirect: djetson/shop/propertygroups
+    redirectClose: djetson/shop/propertygroups
+
+# Preview page
+preview:
+    title: djetson.shop::lang.property_groups.preview

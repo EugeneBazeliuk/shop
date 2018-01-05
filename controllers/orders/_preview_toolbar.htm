@@ -1,0 +1,36 @@
+<div class="btn-group">
+
+    <a      href="<?= Backend::url('djetson/shop/orders') ?>"
+            class="btn btn-default oc-icon-chevron-left">
+            Назад</a>
+
+    <a      href="<?= Backend::url('djetson/shop/orders/update/'.$formModel->id) ?>"
+            class="btn btn-default oc-icon-pencil">
+            Изменить</a>
+
+</div>
+
+<div class="btn-group">
+
+    <button type="button"
+            class="btn btn-default oc-icon-star"
+            data-control="popup"
+            data-handler="onLoadChangeStatusForm"
+            data-size="large">
+            Статус</button>
+
+    <button type="button"
+            class="btn btn-default oc-icon-star"
+            data-control="popup"
+            data-handler="onLoadPaymentMethodForm"
+            data-size="small">
+            Метод оплаты</button>
+
+    <button type="button"
+            class="btn btn-default oc-icon-star"
+            data-control="popup"
+            data-handler="onLoadShippingMethodForm"
+            data-size="small">
+            Метод доставки</button>
+
+</div>

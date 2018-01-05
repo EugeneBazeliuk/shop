@@ -1,0 +1,10 @@
+<table class="table">
+    <tbody>
+        <?php foreach ($formModel->information as $key => $val): ?>
+        <tr>
+            <td width="30%"><?= trans(sprintf('djetson.shop::lang.form.%s', $key)) ?></td>
+            <td><?= $val ?></td>
+        </tr>
+        <?php endforeach ?>
+    </tbody>
+</table>

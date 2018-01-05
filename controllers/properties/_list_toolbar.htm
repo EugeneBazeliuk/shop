@@ -1,0 +1,20 @@
+<div data-control="toolbar">
+
+    <!-- Create -->
+    <a
+        href="<?= Backend::url('djetson/shop/properties/create') ?>"
+        class="btn btn-primary oc-icon-plus">
+        <?= e(trans('djetson.shop::lang.btn.create')) ?>
+    </a>
+
+    <!-- Reorder -->
+    <a  href="<?= Backend::url('djetson/shop/properties/reorder') ?>"
+        class="btn btn-default oc-icon-sitemap">
+        <?= e(trans('backend::lang.reorder.default_title')) ?></a>
+
+    <!-- Group -->
+    <a  href="<?= Backend::url('djetson/shop/propertygroups') ?>"
+        class="btn btn-default oc-icon-align-justify">
+        <?= e(trans('djetson.shop::lang.btn.property_groups')) ?></a>
+
+</div>

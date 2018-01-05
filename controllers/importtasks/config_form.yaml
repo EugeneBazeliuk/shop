@@ -1,0 +1,19 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: djetson.shop::lang.shop.create_import_task
+
+# Model Form Field configuration
+form: $/djetson/shop/models/importtask/fields.yaml
+
+# Model Class name
+modelClass: Djetson\Shop\Models\ImportTask
+
+# Default redirect location
+defaultRedirect: djetson/shop/imports
+
+# Preview page
+preview:
+    title: djetson.shop::lang.shop.preview_import_task

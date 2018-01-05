@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: djetson.shop::lang.categories.label
+
+# Model Form Field configuration
+form: $/djetson/shop/models/category/fields.yaml
+
+# Model Class name
+modelClass: Djetson\Shop\Models\Category
+
+# Default redirect location
+defaultRedirect: djetson/shop/categories
+
+# Create page
+create:
+    title: djetson.shop::lang.categories.create
+    redirect: djetson/shop/categories/update/:id
+    redirectClose: djetson/shop/categories
+
+# Update page
+update:
+    title: djetson.shop::lang.categories.update
+    redirect: djetson/shop/categories
+    redirectClose: djetson/shop/categories
+
+# Preview page
+preview:
+    title: djetson.shop::lang.categories.preview

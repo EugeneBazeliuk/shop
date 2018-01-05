@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Reserve
+
+# Model Form Field configuration
+form: $/djetson/shop/models/reserve/fields.yaml
+
+# Model Class name
+modelClass: Djetson\Shop\Models\Reserve
+
+# Default redirect location
+defaultRedirect: djetson/shop/reserves
+
+# Create page
+create:
+    title: Create Reserve
+    redirect: djetson/shop/reserves/update/:code
+    redirectClose: djetson/shop/reserves
+
+# Update page
+update:
+    title: Edit Reserve
+    redirect: djetson/shop/reserves
+    redirectClose: djetson/shop/reserves
+
+# Preview page
+preview:
+    title: Preview Reserve

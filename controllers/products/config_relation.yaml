@@ -1,0 +1,45 @@
+bindings:
+    label: djetson.shop::lang.bindings.label
+    view:
+        toolbarButtons: add|remove
+        recordsPerPage: 10
+        list: $/djetson/shop/models/binding/columns.yaml
+
+featured:
+    label: djetson.shop::lang.featured.label
+    view:
+        toolbarButtons: add|remove
+        recordsPerPage: 10
+        list: $/djetson/shop/models/product/columns.yaml
+    manage:
+        recordsPerPage: 10
+
+properties:
+    label: djetson.shop::lang.properties.label
+    view:
+        toolbarButtons: add|remove
+        recordsPerPage: 10
+        list: $/djetson/shop/models/productproperty/columns.yaml
+    manage:
+        list: $/djetson/shop/models/property/columns.yaml
+    pivot:
+        form: $/djetson/shop/models/productproperty/fields.yaml
+
+# Warehouses
+warehouses:
+    label: djetson.shop::lang.warehouses.label
+    readOnly: true
+    view:
+        showSearch: true
+        recordsPerPage: 10
+        toolbarButtons: add|remove
+        list:
+            columns:
+                name:
+                    label: djetson.shop::lang.list.name
+                    type: text
+                    searchable: 1
+                pivot[quantity]:
+                    label: djetson.shop::lang.list.quantity
+                    type: number
+                    required: 1

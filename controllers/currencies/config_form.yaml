@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: djetson.shop::lang.currencies.label
+
+# Model Form Field configuration
+form: $/djetson/shop/models/currency/fields.yaml
+
+# Model Class name
+modelClass: Djetson\Shop\Models\Currency
+
+# Default redirect location
+defaultRedirect: djetson/shop/currencies
+
+# Create page
+create:
+    title: djetson.shop::lang.currencies.create
+    redirect: djetson/shop/currencies/update/:id
+    redirectClose: djetson/shop/currencies
+
+# Update page
+update:
+    title: djetson.shop::lang.currencies.update
+    redirect: djetson/shop/currencies
+    redirectClose: djetson/shop/currencies
+
+# Preview page
+preview:
+    title: djetson.shop::lang.currencies.preview

@@ -1,0 +1,18 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    # Status
+    status:
+        label: djetson.shop::lang.form.status
+        span: full
+        type: relation
+
+    # Comment
+    comment:
+        label: djetson.shop::lang.form.comment
+        type: textarea
+        span: full
+        size: hude

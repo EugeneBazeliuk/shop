@@ -1,0 +1,19 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+
+    name:
+        label: djetson.shop::lang.list.name
+        type: text
+        searchable: 1
+
+    sku:
+        label: djetson.shop::lang.list.sku
+        type: text
+        searchable: 1
+
+    pivot[quantity]:
+        label: djetson.shop::lang.list.quantity
+        type: number
