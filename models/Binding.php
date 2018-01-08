@@ -157,6 +157,10 @@ class Binding extends Model
             'slug' => $this->slug,
         ];
 
+        if ($this->type) {
+            $params['type'] = $this->type->code;
+        }
+
         return $this->url = $controller->pageUrl($pageName, $params);
     }
 }

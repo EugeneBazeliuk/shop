@@ -1,0 +1,34 @@
+{% set product = __SELF__.product %}
+{% set properties = __SELF__.productProperties %}
+{% set bindings = __SELF__.productBindings %}
+
+<ul>
+    <li>{{ product.name }}</li>
+    <li>{{ product.price }}</li>
+    <li>{{ product.year }}</li>
+    <li>{{ product.description }}</li>
+    <li>{{ product.sku }}</li>
+    <li>{{ product.isbn }}</li>
+</ul>
+
+<table>
+    <tbody>
+        {% for binding in bindings %}
+        <tr>
+            <td>{{ binding.type }}</td>
+            <td>
+                {% for item in binding.items %}
+                    <a href="{{ item.url }}">{{ item.name }}</a>
+                {% endfor %}
+            </td>
+        </tr>
+        {% endfor %}
+
+        {% for property in properties %}
+        <tr>
+            <td>{{ property.name }}</td>
+            <td>{{ property.value }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

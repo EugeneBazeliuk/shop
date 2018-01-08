@@ -152,11 +152,21 @@ class ProductsList extends ComponentBase
         $binding = $this->binding ? $this->binding->id : null;
         $category = $this->category ? $this->category->id : null;
 
+        /**
+         *
+         */
         $products = ShopProduct::listFrontEnd([
             'bindings'      => $binding,
             'categories'    => $category,
             'page'          => $this->property('pageNumber'),
         ]);
+
+        /*
+         * Add url
+         */
+        $products->each(function($product) {
+            $product->setUrl($this->productPage, $this->controller);
+        });
 
         return $products;
     }

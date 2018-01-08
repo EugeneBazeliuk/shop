@@ -52,4 +52,9 @@ class ProductProperty extends Pivot
         'property'      => ['required'],
         'property_value'    => ['required']
     ];
+
+    public function getValue()
+    {
+        return $this->property_value->value;
+    }
 }

@@ -25,6 +25,7 @@ class Plugin extends PluginBase
     {
         return [
             'Djetson\Shop\Components\ProductsList'  => 'productsList',
+            'Djetson\Shop\Components\ProductView'  => 'productsView',
         ];
     }
 
